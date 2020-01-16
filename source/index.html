@@ -7,13 +7,11 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/placeholder.png" alt="Cat energy">
-        <span class="page-header__logo-text page-header__logo-text--bold">Cat</span>
-        <span class="page-header__logo-text">energy</span>
+        <img src="img/placeholder.png" alt="Cat energy">
       </a>
 
+      <button type="button" class="main-navigation__toggle">Открыть меню</button>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle">Открыть меню</button>
         <ul class="main-navigation__list page-list">
           <li class="page-list__item page-list__item--active">
             <a>Главная</a>
@@ -66,6 +64,34 @@
           </li>
         </ul>
       </section>
+
+      <section class="living-example">
+        <h2 class="living-example__title">Живой пример</h2>
+        <p class="living-example__story">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <p class="living-example__property--squarable">
+          <span class="living-example__property-title">Снижение веса</span>
+          <span class="lliving-example__property-value">5 кг</span>
+        </p>
+        <p class="living-example__property living-example__property--squarable">
+          <span class="living-example__property-title">Затрачено времени</span>
+          <span class="lliving-example__property-value">60 дней</span>
+        </p>
+        <p class="living-example__property">
+          <span class="living-example__property-title">Затраты на питание:</span>
+          <span class="lliving-example__property-value">15 000 Р.</span>
+        </p>
+
+        <div class="living-example__slider image-slider">
+          <p class="image-slider__image">
+            <img src="img/cat-progress.png" alt="Прогресс кота">
+          </p>
+          <span class="image-slider__before-title">Было</span>
+          <button type="button" class="image-slider__button"><span class="visually-hidden">Кнопка прокрутки</span></button>
+          <span class="image-slider__after-title">Стало</span>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -77,6 +103,10 @@
             <img src="img/map.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </p>
         </div>
+
+        <a class="page-footer__logo">
+          <img src="img/placeholder.png" alt="Cat energy">
+        </a>
 
         <div class="page-footer__social social">
           <ul class="social__list">
