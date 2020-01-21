@@ -1,0 +1,41 @@
+.living-example {
+  background-color: $block-color;
+}
+
+.living-example__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $title-color;
+}
+
+.living-example__story {
+  @include description-font;
+}
+
+.living-example__property-title,
+.living-example__property-value {
+  font-size: 14px;
+  line-height: 20px;
+  color: $title-color;
+}
+
+.living-example__property--squarable .living-example__property-title {
+  font-family: $description-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: $description-color;
+}
+
+.living-example__property--squarable .living-example__property-value {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.image-slider__before-title,
+.image-slider__after-title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $title-color;
+}

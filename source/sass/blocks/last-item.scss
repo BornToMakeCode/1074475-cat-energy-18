@@ -1,0 +1,22 @@
+.last-item__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $title-color;
+  text-transform: uppercase;
+}
+
+.last-item__description {
+  font-family: $description-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $description-color;
+}
+
+.last-item__show-more {
+  font-size: 16px;
+  line-height: 20px;
+  color: $description-color;
+  text-transform: uppercase;
+  background-color: $block-color;
+}
