@@ -1,0 +1,25 @@
+.catalog-preview {
+  background-color: $block-color;
+}
+
+.catalog-preview__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.catalog-preview__desription {
+  @include description-font;
+}
+
+.catalog-preview__select {
+  font-size: 16px;
+  line-height: 16px;
+  color: $title-color;
+
+  &:active {
+    color: rgba($title-color, 0.3);
+  }
+}

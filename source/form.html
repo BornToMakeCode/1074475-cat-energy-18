@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -26,8 +27,8 @@
       </nav>
     </header>
 
-    <main class="page-main">
-      <h1 class="page-main__title">Подбор программы</h1>
+    <main class="page-form">
+      <h1 class="page-form__title">Подбор программы</h1>
       <form action="https://echo.htmlacademy.ru" class="program-form">
         <p class="program-form__title">Заполните анкету и мы подберем программу питания для Вашего кота</p>
 
@@ -35,17 +36,17 @@
           <legend class="visually-hidden">Информация о коте</legend>
           <ul class="cat-info__list">
             <li class="cat-info__item">
-              <label for="cat-name">Имя:<sup>*</sup></label>
-              <input type="text" id="cat-name" name="catName" placeholder="Барсик">
+              <label class="cat-info__name-label program-form__label" for="cat-name">Имя:<sup>*</sup></label>
+              <input class="cat-info__name-input program-form__input" type="text" id="cat-name" name="catName" placeholder="Барсик">
             </li>
             </li>
             <li class="cat-info__item">
-              <label for="cat-weight">Вес (кг):<sup>*</sup></label>
-              <input type="number" id="cat-weight" name="catWeight" placeholder="7">
+              <label class="cat-info__weight-label program-form__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
+              <input class="cat-info__weight-input program-form__input" type="number" id="cat-weight" name="catWeight" placeholder="7">
             </li>
             <li class="cat-info__item">
-              <label for="cat-age">Возраст (лет):<sup>*</sup></label>
-              <input type="number" id="cat-age" name="catAge" placeholder="7">
+              <label class="cat-info__age-label program-form__label" for="cat-age">Возраст (лет):<sup>*</sup></label>
+              <input class="cat-info__age-input program-form__input" type="number" id="cat-age" name="catAge" placeholder="7">
             </li>
           </ul>
         </fieldset>
@@ -54,7 +55,7 @@
           <legend class="visually-hidden">Тип программы</legend>
           <ul class="program-type__list">
             <li class="program-type__item">
-              <label class="program-type__radio">
+              <label class="program-type__radio program-form__label">
                 <input type="radio" class="visually-hidden" name="programType">
                 <span class="radio-indicator"></span>
                 Похудение
@@ -62,14 +63,14 @@
             </li>
             </li>
             <li class="program-type__item">
-              <label class="program-type__radio">
+              <label class="program-type__radio program-form__label">
                 <input type="radio" class="visually-hidden" name="programType">
                 <span class="radio-indicator"></span>
                 Набор массы
               </label>
             </li>
             <li class="program-type__item">
-              <label class="program-type__radio">
+              <label class="program-type__radio program-form__label">
                 <input type="radio" class="visually-hidden" name="programType">
                 <span class="radio-indicator"></span>
                 Не знаю (нужен ваш совет)
@@ -79,31 +80,30 @@
         </fieldset>
 
         <fieldset class="program-form__contact owner-contact">
-          <legend class="owner-contact__title">Контактные данные (владельца кота)</legend>
+          <legend class="form-title owner-contact__title">Контактные данные (владельца кота)</legend>
           <ul class="owner-contact__list">
             <li class="owner-contact__item">
-              <label for="contact-email">e-mail:<sup>*</sup></label>
-              <input type="text" id="contact-email" name="contactEmail" placeholder="kuklachev@gmail.com">
+              <label class="owner-contact__email-label program-form__label" for="contact-email">e-mail:<sup>*</sup></label>
+              <input class="owner-contact__email-input program-form__input" type="email" id="contact-email" name="contactEmail" placeholder="kuklachev@gmail.com">
             </li>
             </li>
             <li class="owner-contact__item">
-              <label for="contact-phone">Телефон:<sup>*</sup></label>
-              <input type="number" id="contact-phone" name="contactPhone" placeholder="8 (960) 900-60-90">
+              <label class="owner-contact__phone-label program-form__label" for="contact-phone">Телефон:<sup>*</sup></label>
+              <input class="owner-contact__phone-input program-form__input" type="tel" id="contact-phone" name="contactPhone" placeholder="8 (960) 900-60-90">
             </li>
           </ul>
         </fieldset>
 
         <p class="program-form__comment comment">
-
-          <label class="comment__title" for="comment">Комментарий</label>
-          <input class="comment__text" type="text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">
+          <label class="form-title comment__title program-form__label" for="comment">Комментарий</label>
+          <textarea class="comment__text program-form__input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </p>
 
         <fieldset class="program-form__additional-info additional-info">
-          <legend class="additional-info__title">Дополнительно</legend>
+          <legend class="form-title additional-info__title">Дополнительно</legend>
           <ul class="additional-info__list">
             <li class="additional-info__item">
-              <label class="additional-info__checkbox">
+              <label class="additional-info__checkbox program-form__label">
                 <input type="checkbox" class="visually-hidden" name="hasSweetener" checked>
                 <span class="checkbox-indicator"></span>
                 Сахарозаменитель
@@ -111,21 +111,21 @@
             </li>
             </li>
             <li class="additional-info__item">
-              <label class="additional-info__checkbox">
+              <label class="additional-info__checkbox program-form__label">
                 <input type="checkbox" class="visually-hidden" name="hasWater">
                 <span class="checkbox-indicator"></span>
                 Питьевая вода
               </label>
             </li>
             <li class="additional-info__item">
-              <label class="additional-info__checkbox">
+              <label class="additional-info__checkbox program-form__label">
                 <input type="checkbox" class="visually-hidden" name="hasMilk">
                 <span class="checkbox-indicator"></span>
                 Молоко
               </label>
             </li>
             <li class="additional-info__item">
-              <label class="additional-info__checkbox">
+              <label class="additional-info__checkbox program-form__label">
                 <input type="checkbox" class="visually-hidden" name="hasVitamins">
                 <span class="checkbox-indicator"></span>
                 Витамины

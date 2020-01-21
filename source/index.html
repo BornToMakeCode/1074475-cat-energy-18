@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -27,7 +28,7 @@
     </header>
 
     <main class="page-main">
-      <h1>Функциональное питание для котов</h1>
+      <h1 class="page-main__title">Функциональное питание для котов</h1>
 
       <section class="program-selection">
         <h2 class="visually-hidden">Подбор программы питания</h2>
@@ -48,7 +49,7 @@
       </section>
 
       <section class="how-it-works">
-        <h2 class="how-it-works__title">Набор массы</h2>
+        <h2 class="how-it-works__title">Как это работает</h2>
         <ul class="how-it-works__list">
           <li class="how-it-works__item how-it-works__item--healthy">
             Функциональное питание содержит только полезные питательные вещества.
@@ -70,26 +71,27 @@
         <p class="living-example__story">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <p class="living-example__property--squarable">
+        <p class="living-example__property living-example__property--squarable">
           <span class="living-example__property-title">Снижение веса</span>
-          <span class="lliving-example__property-value">5 кг</span>
+          <span class="living-example__property-value">5 кг</span>
         </p>
         <p class="living-example__property living-example__property--squarable">
           <span class="living-example__property-title">Затрачено времени</span>
-          <span class="lliving-example__property-value">60 дней</span>
+          <span class="living-example__property-value">60 дней</span>
         </p>
         <p class="living-example__property">
           <span class="living-example__property-title">Затраты на питание:</span>
-          <span class="lliving-example__property-value">15 000 Р.</span>
+          <span class="living-example__property-value">15 000 Р.</span>
         </p>
 
         <div class="living-example__slider image-slider">
           <p class="image-slider__image">
-            <img src="img/cat-progress.png" alt="Прогресс кота">
+            <img src="img/cat-progress1.png" alt="Прогресс кота до">
+            <img class="visually-hidden" src="img/cat-progress2.png" alt="Прогресс кота после">
           </p>
-          <span class="image-slider__before-title">Было</span>
+          <label class="image-slider__before-title">Было</label>
           <button type="button" class="image-slider__button"><span class="visually-hidden">Кнопка прокрутки</span></button>
-          <span class="image-slider__after-title">Стало</span>
+          <label class="image-slider__after-title">Стало</label>
         </div>
       </section>
     </main>

@@ -1,0 +1,15 @@
+.how-it-works__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.how-it-works__list {
+  list-style: none;
+}
+
+.how-it-works__item {
+  @include description-font;
+}

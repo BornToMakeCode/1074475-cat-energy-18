@@ -1,0 +1,6 @@
+@mixin description-font {
+  font-family: $description-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $description-color;
+}

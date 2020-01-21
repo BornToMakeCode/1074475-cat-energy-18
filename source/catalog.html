@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -26,8 +27,8 @@
       </nav>
     </header>
 
-    <main class="page-main">
-      <h1 class="page-main__title">Каталог продукции</h1>
+    <main class="page-catalog">
+      <h1 class="page-catalog__title">Каталог продукции</h1>
       <ul class="product-catalog">
         <li class="product-catalog__item">
           <article class="product-preview">
@@ -179,35 +180,39 @@
           <li class="additional-products__item">
             <section class="additional-product">
               <h3 class="additional-product__title">Сахарозаменитель</h3>
-              <p class="additional-product__count">1 упаковка (100 г)</p>
-              <p class="additional-product__price">200 Р.</p>
+              <p class="additional-product__property">1 упаковка (100 г)</p>
+              <p class="additional-product__property">200 Р.</p>
+              <a class="button additional-product__order" href="#">Заказать</a>
             </section>
           </li>
           <li class="additional-products__item">
             <section class="additional-product">
               <h3 class="additional-product__title">Питьевая вода</h3>
-              <p class="additional-product__count">5 литров</p>
-              <p class="additional-product__price">50 Р.</p>
+              <p class="additional-product__property">5 литров</p>
+              <p class="additional-product__property">50 Р.</p>
+              <a class="button additional-product__order" href="#">Заказать</a>
             </section>
           </li>
           <li class="additional-products__item">
             <section class="additional-product">
               <h3 class="additional-product__title">Молоко</h3>
-              <p class="additional-product__count">1 литр</p>
-              <p class="additional-product__price">100 Р.</p>
+              <p class="additional-product__property">1 литр</p>
+              <p class="additional-product__property">100 Р.</p>
+              <a class="button additional-product__order" href="#">Заказать</a>
             </section>
           </li>
           <li class="additional-products__item">
             <section class="additional-product">
               <h3 class="additional-product__title">Витамины</h3>
-              <p class="additional-product__count">1 упаковка (30 г)</p>
-              <p class="additional-product__price">300 Р.</p>
+              <p class="additional-product__property">1 упаковка (30 г)</p>
+              <p class="additional-product__property">300 Р.</p>
+              <a class="button additional-product__order" href="#">Заказать</a>
             </section>
           </li>
         </ul>
 
-        <p class="additional-products__buy-all">
-          <a href="#">Закажите все и получите чехол для кота в подарок!</a>
+        <p class="additional-products__deal buy-all-deal">
+          <a class="buy-all-deal__title" href="#">Закажите все и получите чехол для кота в подарок!</a>
         </p>
       </section>
     </main>

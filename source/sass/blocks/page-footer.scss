@@ -1,0 +1,22 @@
+.page-footer {
+  background-color: $block-color;
+}
+
+.contacts {
+  background-color: $primary-color;
+}
+
+.contacts__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.contacts__address {
+  font-family: $description-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $description-color;
+}
