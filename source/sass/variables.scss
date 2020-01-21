@@ -1,8 +1,14 @@
 $primary-font: 'Oswald', 'Arial', sans-serif;
 $description-font: 'Arial', sans-serif;
-$primary-color: #ffffff;
-$block-color: #f2f2f2;
-$title-color: #111111;
-$description-color: #444444;
-$label-color: #222222;
 
+$white: #ffffff;
+$white-light: #f2f2f2;
+$black: #111111;
+$black-light: #222222;
+$black-lighter: #444444;
+
+$primary-color: $white;
+$block-color: $white-light;
+$title-color: $black;
+$description-color: $black-lighter;
+$label-color: $black-light;
