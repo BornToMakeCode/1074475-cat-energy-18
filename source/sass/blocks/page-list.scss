@@ -1,12 +1,12 @@
 .page-list {
-  list-style: none;
+  @include list-reset;
 }
 
 .page-list__item {
   font-size: 20px;
-  line-height: 24.86px;
+  line-height: 20px;
   text-transform: uppercase;
-  color: $primary-color;
+  color: $title-color;
   cursor: pointer;
 
   &:hover,
@@ -16,5 +16,28 @@
 
   &:active{
     color: rgba($primary-color, 0.3);
+  }
+}
+
+@media(min-width:$tablet-width){
+  .page-list__item {
+    font-size: 18px;
+    line-height: 24.86px;
+  }
+}
+
+@media(min-width:$desktop-width){
+  .page-list__item {
+    line-height: 24.86px;
+    color: $primary-color;
+
+    &:hover,
+    &:focus{
+      color: rgba($primary-color, 0.6);
+    }
+
+    &:active{
+      color: rgba($primary-color, 0.3);
+    }
   }
 }

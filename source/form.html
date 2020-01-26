@@ -11,14 +11,14 @@
         <img src="img/placeholder.png" alt="Cat energy">
       </a>
 
-      <button type="button" class="main-navigation__toggle">Открыть меню</button>
+      <button type="button" class="page-header__menu-toggle"><span>Открыть меню</span></button>
       <nav class="main-navigation">
         <ul class="main-navigation__list page-list">
           <li class="page-list__item">
-            <a>Главная</a>
+            <a href="#">Главная</a>
           </li>
           <li class="page-list__item">
-            <a>Каталог продукции</a>
+            <a href="#">Каталог продукции</a>
           </li>
           <li class="page-list__item page-list__item--active">
             <a>Подбор программы</a>
@@ -30,55 +30,57 @@
     <main class="page-form">
       <h1 class="page-form__title">Подбор программы</h1>
       <form action="https://echo.htmlacademy.ru" class="program-form">
-        <p class="program-form__title">Заполните анкету и мы подберем программу питания для Вашего кота</p>
+        <p class="program-form__title">Заполните анкету и мы подберем </br> программу питания для Вашего кота</p>
 
-        <fieldset class="program-form__cat-info cat-info">
-          <legend class="visually-hidden">Информация о коте</legend>
-          <ul class="cat-info__list">
-            <li class="cat-info__item">
-              <label class="cat-info__name-label program-form__label" for="cat-name">Имя:<sup>*</sup></label>
-              <input class="cat-info__name-input program-form__input" type="text" id="cat-name" name="catName" placeholder="Барсик">
-            </li>
-            <li class="cat-info__item">
-              <label class="cat-info__weight-label program-form__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
-              <input class="cat-info__weight-input program-form__input" type="number" id="cat-weight" name="catWeight" placeholder="7">
-            </li>
-            <li class="cat-info__item">
-              <label class="cat-info__age-label program-form__label" for="cat-age">Возраст (лет):<sup>*</sup></label>
-              <input class="cat-info__age-input program-form__input" type="number" id="cat-age" name="catAge" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
+        <div class="program-properties">
+          <fieldset class="program-form__cat-info cat-info">
+            <legend class="visually-hidden">Информация о коте</legend>
+            <ul class="cat-info__list">
+              <li class="cat-info__item">
+                <label class="cat-info__name-label program-form__label" for="cat-name">Имя:<sup>*</sup></label>
+                <input class="cat-info__name-input program-form__input" type="text" id="cat-name" name="catName" placeholder="Барсик">
+              </li>
+              <li class="cat-info__item">
+                <label class="cat-info__weight-label program-form__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
+                <input class="cat-info__weight-input program-form__input" type="number" id="cat-weight" name="catWeight" placeholder="7">
+              </li>
+              <li class="cat-info__item">
+                <label class="cat-info__age-label program-form__label" for="cat-age">Возраст (лет):<sup>*</sup></label>
+                <input class="cat-info__age-input program-form__input" type="number" id="cat-age" name="catAge" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="program-form__type program-type">
-          <legend class="visually-hidden">Тип программы</legend>
-          <ul class="program-type__list">
-            <li class="program-type__item">
-              <label class="program-type__radio program-form__label">
-                <input type="radio" class="visually-hidden" name="programType">
-                <span class="radio-indicator"></span>
-                Похудение
-              </label>
-            </li>
-            <li class="program-type__item">
-              <label class="program-type__radio program-form__label">
-                <input type="radio" class="visually-hidden" name="programType">
-                <span class="radio-indicator"></span>
-                Набор массы
-              </label>
-            </li>
-            <li class="program-type__item">
-              <label class="program-type__radio program-form__label">
-                <input type="radio" class="visually-hidden" name="programType">
-                <span class="radio-indicator"></span>
-                Не знаю (нужен ваш совет)
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="program-form__type program-type">
+            <legend class="visually-hidden">Тип программы</legend>
+            <ul class="program-type__list">
+              <li class="program-type__item">
+                <label class="program-type__radio program-form__label">
+                  <input type="radio" class="visually-hidden" name="programType">
+                  <span class="radio-indicator"></span>
+                  Похудение
+                </label>
+              </li>
+              <li class="program-type__item">
+                <label class="program-type__radio program-form__label">
+                  <input type="radio" class="visually-hidden" name="programType">
+                  <span class="radio-indicator"></span>
+                  Набор массы
+                </label>
+              </li>
+              <li class="program-type__item">
+                <label class="program-type__radio program-form__label">
+                  <input type="radio" class="visually-hidden" name="programType">
+                  <span class="radio-indicator"></span>
+                  Не знаю (нужен ваш совет)
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
         <fieldset class="program-form__contact owner-contact">
-          <legend class="form-title owner-contact__title">Контактные данные (владельца кота)</legend>
+          <legend class="program-form__category-title owner-contact__title">Контактные данные (владельца кота)</legend>
           <ul class="owner-contact__list">
             <li class="owner-contact__item">
               <label class="owner-contact__email-label program-form__label" for="contact-email">e-mail:<sup>*</sup></label>
@@ -92,12 +94,12 @@
         </fieldset>
 
         <p class="program-form__comment comment">
-          <label class="form-title comment__title program-form__label" for="comment">Комментарий</label>
+          <label class="program-form__category-title comment__title" for="comment">Комментарий</label>
           <textarea class="comment__text program-form__input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </p>
 
         <fieldset class="program-form__additional-info additional-info">
-          <legend class="form-title additional-info__title">Дополнительно</legend>
+          <legend class="program-form__category-title additional-info__title">Дополнительно</legend>
           <ul class="additional-info__list">
             <li class="additional-info__item">
               <label class="additional-info__checkbox program-form__label">
@@ -130,9 +132,10 @@
           </ul>
         </fieldset>
 
-        <button type="submit" class="button program-form__send">Отправить заявку</button>
-
-        <small class="program-form__required-legend"><sup>*</sup> — Обязательные поля</small>
+        <div class="program-form__footer">
+          <button type="submit" class="button program-form__send">Отправить заявку</button>
+          <small class="program-form__required-legend"><sup>*</sup> — Обязательные поля</small>
+        </div>
       </form>
     </main>
 
@@ -167,5 +170,6 @@
         <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+    <script src="js/main-navigation.js"></script>
   </body>
 </html>

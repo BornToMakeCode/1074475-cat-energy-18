@@ -1,0 +1,17 @@
+.program-properties {
+  display: flex;
+  flex-wrap: wrap;
+
+
+  margin-top: 40px;
+}
+
+@media(min-width:$tablet-width){
+  .program-properties {
+    margin-top: 67px;
+  }
+}
+
+@media(min-width:$desktop-width){
+
+}

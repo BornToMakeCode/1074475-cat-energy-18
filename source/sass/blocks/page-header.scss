@@ -1,0 +1,10 @@
+.page-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.page-header__menu-toggle {
+  margin-left: auto;
+}
