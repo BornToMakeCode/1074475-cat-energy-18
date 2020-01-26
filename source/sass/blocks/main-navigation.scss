@@ -1,0 +1,8 @@
+.main-navigation {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.main-navigation--closed {
+  @include  visually-hidden;
+}

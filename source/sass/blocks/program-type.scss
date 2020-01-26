@@ -1,0 +1,40 @@
+.program-type {
+  margin: 0;
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.program-type__list {
+  @include list-reset;
+}
+
+.program-type__item {
+  margin-bottom: 25px;
+}
+
+.program-type__radio {
+  margin-left: 45px;
+}
+
+@media(min-width:$tablet-width){
+  .program-type__item {
+    margin-bottom: 32px;
+  }
+
+  .program-type {
+    padding: 0;
+    padding-top: 33px;
+    padding-left: 41px;
+  }
+}
+
+@media(min-width:$desktop-width){
+
+  .program-type {
+    width: 570px;
+  }
+}
+

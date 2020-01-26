@@ -1,0 +1,33 @@
+.cat-info {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+
+.cat-info__list {
+  @include list-reset;
+}
+
+.cat-info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+@media(min-width:$tablet-width){
+  .program-properties {
+    margin-top: 70px;
+  }
+
+  .cat-info__item {
+    margin-bottom: 22px;
+  }
+}
+
+@media(min-width:$desktop-width){
+  .cat-info {
+    margin-right: 80px;
+    width: 570px;
+  }
+}

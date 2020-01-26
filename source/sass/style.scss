@@ -4,14 +4,11 @@
 @import 'normalize.scss';
 @import 'global.scss';
 @import 'blocks/button.scss';
-@import 'blocks/page-header.scss';
-@import 'blocks/page-main.scss';
 @import 'blocks/page-list.scss';
 @import 'blocks/program-selection.scss';
 @import 'blocks/catalog-preview.scss';
 @import 'blocks/how-it-works.scss';
 @import 'blocks/living-example.scss';
-@import 'blocks/page-footer.scss';
 @import 'blocks/contacts.scss';
 @import 'blocks/page-catalog.scss';
 @import 'blocks/product-preview.scss';
@@ -19,6 +16,22 @@
 @import 'blocks/additional-products.scss';
 @import 'blocks/additional-product.scss';
 @import 'blocks/buy-all-deal.scss';
-@import 'blocks/page-form.scss';
-@import 'blocks/program-form.scss';
 @import 'blocks/cat-info.scss';
+@import 'blocks/program-type.scss';
+@import 'blocks/owner-contact.scss';
+@import 'blocks/comment.scss';
+@import 'blocks/additional-info.scss';
+
+@import 'blocks/program-form.scss';
+@import 'blocks/program-properties.scss';
+
+@import 'blocks/page-header.scss';
+@import 'blocks/main-navigation.scss';
+@import 'blocks/page-main.scss';
+@import 'blocks/page-form.scss';
+@import 'blocks/page-footer.scss';
+
+@import 'blocks/page-footer.scss';
+
+//TODO: REMOVE
+@import 'blocks/to-be-removed.scss';
