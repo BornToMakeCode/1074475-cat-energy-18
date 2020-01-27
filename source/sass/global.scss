@@ -27,6 +27,10 @@ body {
   //background-color: orange;
 }
 
+.wrapper {
+   @include wrapper;
+}
+
 @media(min-width:$tablet-width){
   body {
     width: $tablet-width;

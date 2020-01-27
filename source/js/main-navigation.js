@@ -1,12 +1,12 @@
 (function(){
 
-  var pageHeader = document.querySelector(".page-header");
-  var menuButton = pageHeader.querySelector(".page-header__menu-toggle");
-  var mainNavigation = pageHeader.querySelector(".main-navigation");
+  var pageHeader = document.querySelector('.page-header');
+  var menuButton = pageHeader.querySelector('.page-header__menu-toggle');
+  var mainNavigation = pageHeader.querySelector('.main-navigation');
 
   var setDefaultState = function(){
-    menuButton.classList.add("page-header__menu-toggle--closed");
-    mainNavigation.classList.add("main-navigation--closed");
+    menuButton.classList.add('page-header__menu-toggle--closed');
+    mainNavigation.classList.add('main-navigation--closed');
   }
 
   var toggleMenu = function(){
@@ -25,11 +25,9 @@
 
 
 
-  menuButton.addEventListener("click", function (evt) {
+  menuButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     toggleMenu();
-    // menuButton.classList.toggle("page-header__menu-toggle--closed");
-    // mainNavigation.classList.toggle("main-navigation--closed");
   });
 
 
