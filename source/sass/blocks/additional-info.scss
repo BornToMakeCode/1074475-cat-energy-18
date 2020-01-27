@@ -8,13 +8,13 @@
 .additional-info__list {
   @include list-reset;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 40px;
 }
 
 .additional-info__item {
   margin-bottom: 25px;
-  width: 100%;
+  //width: 100%;
 }
 
 .additional-info__checkbox {
@@ -23,6 +23,8 @@
 
 @media(min-width:$tablet-width){
   .additional-info__list {
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 67px;
   }
 
@@ -48,4 +50,11 @@
   .additional-info__item:not(:nth-child(4n + 4)) {
     margin-right: 80px;
   }
+
+  // .additional-info__item {
+  //   margin-right: 80px;
+  // }
+  // .additional-info__item:nth-child(4n + 4) {
+  //   margin-right: 0;
+  // }
 }

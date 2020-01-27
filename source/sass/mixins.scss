@@ -24,3 +24,19 @@
   padding: 0;
 }
 
+@mixin wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $mobile-width) {
+    width: calc(#{$mobile-width} - 20px * 2)
+  }
+
+  @media (min-width: $tablet-width) {
+    width: calc(#{$tablet-width} - 30px * 2)
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(#{$desktop-width} - 40px * 2)
+  }
+}
+
