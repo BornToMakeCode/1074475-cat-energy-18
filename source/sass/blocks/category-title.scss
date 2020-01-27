@@ -1,0 +1,12 @@
+.category-title {
+  font-size: 24px;
+  line-height: 24px;
+  color: $title-color;
+}
+
+@media(min-width:$tablet-width){
+  .category-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}

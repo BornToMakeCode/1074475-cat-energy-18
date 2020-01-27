@@ -1,0 +1,29 @@
+.product-catalog {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-catalog__item {
+  margin-bottom: 20px;
+}
+
+@media(min-width:$tablet-width){
+  .product-catalog {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product-catalog__item {
+    width: 324px;
+  }
+
+  .product-catalog__item:nth-child(odd) {
+    margin-right: 60px;
+  }
+}
+
+@media(min-width:$desktop-width){
+
+}
+
