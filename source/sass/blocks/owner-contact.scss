@@ -4,14 +4,10 @@
   border: 0;
 }
 
-// .owner-contact__title {
-//   margin-bottom: 35px;
-// }
-
 .owner-contact__list {
   @include list-reset;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 35px;
 }
 
@@ -19,9 +15,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 17px;
-  width: 100%;
 }
-
 
 @media(min-width:$tablet-width){
   .owner-contact__list {
@@ -34,7 +28,10 @@
 }
 
 @media(min-width:$desktop-width){
-
+  .owner-contact__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
   .owner-contact__item {
     width: 570px;

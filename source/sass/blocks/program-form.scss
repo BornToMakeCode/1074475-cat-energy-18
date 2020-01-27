@@ -5,17 +5,11 @@
 .program-form__title {
   margin: 0;
   padding: 0;
-  // margin-top: 25px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $title-color;
-}
-
-.program-form__category-title {
-  font-size: 24px;
-  line-height: 24px;
-  color: $title-color;
+  max-width: 230px;
 }
 
 .program-form__label {
@@ -68,8 +62,6 @@
 
 .program-form__send {
   font-size: 16px;
-  //margin-top: 13px;
-  //margin-bottom: 22px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 0;
@@ -88,8 +80,6 @@
 
 @media(min-width:$tablet-width){
   .program-form {
-    // margin-top: 56px;
-    // margin-left: 40px;
     margin: 0;
     padding-top: 38px;
     padding-right: 38px;
@@ -99,11 +89,7 @@
   .program-form__title {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .program-form__category-title {
-    font-size: 36px;
-    line-height: 36px;
+    max-width: 330px;
   }
 
   .program-form__label {

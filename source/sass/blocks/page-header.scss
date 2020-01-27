@@ -1,10 +1,91 @@
 .page-header {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  //align-items: center;
+  margin: 0 auto;
+
+
+  // temporary to be fixed with width variable
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  width: 320px;
+
+  // temporary is it ok?
+  min-height: 65px;
+}
+
+.page-header__logo {
+  min-height: 45px;
 }
 
 .page-header__menu-toggle {
-  margin-left: auto;
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  z-index: 1;
+  display: block;
+  width: 24px;
+  height: 18px;
+  background-color: $primary-color;
+  cursor: pointer;
+  border: none;
+}
+
+.page-header__menu-toggle--closed::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: 0;
+
+  width: 24px;
+  height: 2px;
+
+  background-color: $label-color;
+  box-shadow: 0 8px 0 0 $label-color, 0 16px 0 0 $label-color;
+}
+
+.page-header__menu-toggle--closed:active::before {
+  background-color: rgba($label-color, 0.3);
+  box-shadow: 0 8px 0 0 rgba($label-color, 0.3), 0 16px 0 0 rgba($label-color, 0.3);
+}
+
+.page-header__menu-toggle--opened {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: auto;
+    left: 0;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: $label-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba($label-color, 0.3);
+  }
+}
+
+@media(min-width:$tablet-width){
+
+  .page-header__menu-toggle {
+    @include visually-hidden;
+  }
 }

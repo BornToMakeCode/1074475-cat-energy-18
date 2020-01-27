@@ -1,4 +1,12 @@
+.last-item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 87px;
+  align-items: center;
+}
+
 .last-item__title {
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -7,6 +15,8 @@
 }
 
 .last-item__description {
+  margin: 0;
+  margin-top: 9px;
   font-family: $description-font;
   font-size: 12px;
   line-height: 16px;
@@ -14,9 +24,23 @@
 }
 
 .last-item__show-more {
+  margin-top: 21px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   font-size: 16px;
   line-height: 20px;
   color: $description-color;
   text-transform: uppercase;
   background-color: $block-color;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    background-color: $block-color;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba($description-color, 0.3);
+  }
 }

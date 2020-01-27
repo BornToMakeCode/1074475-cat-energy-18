@@ -1,6 +1,7 @@
 .program-properties {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
 
 
   margin-top: 40px;
@@ -13,5 +14,8 @@
 }
 
 @media(min-width:$desktop-width){
-
+  .program-properties {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

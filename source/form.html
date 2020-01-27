@@ -11,17 +11,18 @@
         <img src="img/placeholder.png" alt="Cat energy">
       </a>
 
-      <button type="button" class="page-header__menu-toggle"><span>Открыть меню</span></button>
+      <button type="button" class="page-header__menu-toggle"><span class="visually-hidden">Открыть меню</span></button>
+
       <nav class="main-navigation">
         <ul class="main-navigation__list page-list">
           <li class="page-list__item">
-            <a href="#">Главная</a>
+            <a class="page-list__link" href="#">Главная</a>
           </li>
           <li class="page-list__item">
-            <a href="#">Каталог продукции</a>
+            <a class="page-list__link" href="#">Каталог продукции</a>
           </li>
           <li class="page-list__item page-list__item--active">
-            <a>Подбор программы</a>
+            <a class="page-list__link">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -30,7 +31,7 @@
     <main class="page-form">
       <h1 class="page-form__title">Подбор программы</h1>
       <form action="https://echo.htmlacademy.ru" class="program-form">
-        <p class="program-form__title">Заполните анкету и мы подберем </br> программу питания для Вашего кота</p>
+        <p class="program-form__title">Заполните анкету и мы подберем программу питания для Вашего кота</p>
 
         <div class="program-properties">
           <fieldset class="program-form__cat-info cat-info">
@@ -80,7 +81,7 @@
         </div>
 
         <fieldset class="program-form__contact owner-contact">
-          <legend class="program-form__category-title owner-contact__title">Контактные данные (владельца кота)</legend>
+          <legend class="category-title owner-contact__title">Контактные данные (владельца кота)</legend>
           <ul class="owner-contact__list">
             <li class="owner-contact__item">
               <label class="owner-contact__email-label program-form__label" for="contact-email">e-mail:<sup>*</sup></label>
@@ -94,12 +95,12 @@
         </fieldset>
 
         <p class="program-form__comment comment">
-          <label class="program-form__category-title comment__title" for="comment">Комментарий</label>
+          <label class="category-title comment__title" for="comment">Комментарий</label>
           <textarea class="comment__text program-form__input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </p>
 
         <fieldset class="program-form__additional-info additional-info">
-          <legend class="program-form__category-title additional-info__title">Дополнительно</legend>
+          <legend class="category-title additional-info__title">Дополнительно</legend>
           <ul class="additional-info__list">
             <li class="additional-info__item">
               <label class="additional-info__checkbox program-form__label">
@@ -140,7 +141,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="">
         <div class="page-footer__contacts contacts">
           <b class="contacts__title">Приглашаем к сотруднечеству дилеров!</b>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -149,25 +150,27 @@
           </p>
         </div>
 
-        <a class="page-footer__logo">
-          <img src="img/placeholder.png" alt="Cat energy">
-        </a>
+        <div class="page-footer__wrapper">
+          <a class="page-footer__logo">
+            <img src="img/placeholder.png" alt="Cat energy">
+          </a>
 
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontacte" href="#">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фэйсбуке</a>
-            </li>
-          </ul>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontacte" href="#">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">Мы в Фэйсбуке</a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
-
-        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
     <script src="js/main-navigation.js"></script>
