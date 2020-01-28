@@ -1,9 +1,8 @@
 .page-list {
-  background-color: $white;
   @include list-reset;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
 .page-list__item {
@@ -13,19 +12,8 @@
   line-height: 20px;
   text-transform: uppercase;
   cursor: pointer;
-
   position: relative;
-  width: 100%;
   text-align: center;
-
-  // &:hover,
-  // &:focus{
-  //   color: rgba($primary-color, 0.6);
-  // }
-
-  // &:active{
-  //   color: rgba($primary-color, 0.3);
-  // }
 
   &::after {
     content: "";
@@ -34,10 +22,7 @@
     border-bottom: 1px solid $gray-light;
     bottom: 0;
     left: -20px;
-
-    //background-color: $label-color;
   }
-
 }
 
 .page-list__link {
@@ -68,16 +53,16 @@
     width: auto;
 
     &::after {
-      content: none;
+      display: none;
     }
   }
 
   .page-list__item--active {
 
     &::after {
+      position: absolute;
+      display:block;
       content: "";
-      // position: absolute;
-      // width: 320px;
       border-bottom: 2px solid $green-light;
       bottom: 15px;
       left: 0px;

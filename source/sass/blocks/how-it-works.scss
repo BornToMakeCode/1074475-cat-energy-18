@@ -1,15 +1,68 @@
 .how-it-works__title {
+  margin: 0;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   color: $title-color;
 }
 
 .how-it-works__list {
-  list-style: none;
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px;
 }
 
 .how-it-works__item {
   @include description-font;
+  margin-bottom: 18px;
+  padding-top: 4px;
+  padding-left: 80px;
+  padding-bottom: 4px;
 }
+
+.how-it-works__item:last-child {
+  margin-bottom: 0;
+}
+
+@media(min-width:$tablet-width) {
+  .how-it-works__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .how-it-works__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .how-it-works__item {
+    margin-bottom: 16px;
+    padding-top: 158px;
+    padding-bottom: 70px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    width: 250px;
+  }
+}
+
+@media(min-width:$tablet-width) and (max-width:$desktop-width - 1) {
+  .how-it-works__item:nth-child(odd) {
+    margin-right: 133px;
+  }
+}
+
+@media(min-width:$desktop-width) {
+  .how-it-works__item {
+    //padding-top: 152px;
+    margin-right: 73px;
+  }
+
+  .how-it-works__item:nth-child(4n + 4) {
+    margin-right: 0;
+  }
+
+}
+
