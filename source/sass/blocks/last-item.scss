@@ -41,7 +41,7 @@
   }
 
   &:active {
-    background-color: #ebebeb; // add variable
+    background-color: $gray-light;
     color: rgba($description-color, 0.3);
   }
 }

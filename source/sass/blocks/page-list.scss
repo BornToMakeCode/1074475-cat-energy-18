@@ -1,7 +1,9 @@
 .page-list {
+  background-color: $white;
   @include list-reset;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .page-list__item {
@@ -12,6 +14,10 @@
   text-transform: uppercase;
   cursor: pointer;
 
+  position: relative;
+  width: 100%;
+  text-align: center;
+
   // &:hover,
   // &:focus{
   //   color: rgba($primary-color, 0.6);
@@ -20,6 +26,18 @@
   // &:active{
   //   color: rgba($primary-color, 0.3);
   // }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    border-bottom: 1px solid $gray-light;
+    bottom: 0;
+    left: -20px;
+
+    //background-color: $label-color;
+  }
+
 }
 
 .page-list__link {
@@ -36,14 +54,45 @@
 }
 
 @media(min-width:$tablet-width){
+  .page-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 440px;
+  }
+
   .page-list__item {
     font-size: 18px;
     line-height: 24.86px;
+
+    width: auto;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .page-list__item--active {
+
+    &::after {
+      content: "";
+      // position: absolute;
+      // width: 320px;
+      border-bottom: 2px solid $green-light;
+      bottom: 15px;
+      left: 0px;
+      width: 100%;
+    }
   }
 }
 
 @media(min-width:$desktop-width){
+  .page-list {
+    width: 479px;
+  }
+
   .page-list__item {
+    font-size: 20px;
     line-height: 24.86px;
     color: $primary-color;
 

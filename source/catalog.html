@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="wrapper">
+      <div class="wrapper page-header__wrapper">
         <a class="page-header__logo">
           <img src="img/placeholder.png" alt="Cat energy">
         </a>
@@ -17,13 +17,13 @@
         <nav class="main-navigation">
           <ul class="main-navigation__list page-list">
             <li class="page-list__item">
-              <a class="page-list__link" href="#">Главная</a>
+              <a class="page-list__link" href="index.html">Главная</a>
             </li>
             <li class="page-list__item page-list__item--active">
               <a class="page-list__link">Каталог продукции</a>
             </li>
             <li class="page-list__item">
-              <a class="page-list__link" href="#">Подбор программы</a>
+              <a class="page-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -194,52 +194,54 @@
 
         <section class="additional-products">
           <h2 class="additional-products__title">Дополнительные товары</h2>
-          <ul class="additional-products__list">
-            <li class="additional-products__item">
-              <section class="additional-product">
-                <h3 class="additional-product__title">Сахарозаменитель</h3>
-                <div class="additional-product__properties">
-                  <p class="additional-product__property">1 упаковка (100 г)</p>
-                  <p class="additional-product__property">200 Р.</p>
-                </div>
-                <a class="button additional-product__order" href="#">Заказать</a>
-              </section>
-            </li>
-            <li class="additional-products__item">
-              <section class="additional-product">
-                <h3 class="additional-product__title">Питьевая вода</h3>
-                <div class="additional-product__properties">
-                  <p class="additional-product__property">5 литров</p>
-                  <p class="additional-product__property">50 Р.</p>
-                </div>
-                <a class="button additional-product__order" href="#">Заказать</a>
-              </section>
-            </li>
-            <li class="additional-products__item">
-              <section class="additional-product">
-                <h3 class="additional-product__title">Молоко</h3>
-                <div class="additional-product__properties">
-                  <p class="additional-product__property">1 литр</p>
-                  <p class="additional-product__property">100 Р.</p>
-                </div>
-                <a class="button additional-product__order" href="#">Заказать</a>
-              </section>
-            </li>
-            <li class="additional-products__item">
-              <section class="additional-product">
-                <h3 class="additional-product__title">Витамины</h3>
-                <div class="additional-product__properties">
-                  <p class="additional-product__property">1 упаковка (30 г)</p>
-                  <p class="additional-product__property">300 Р.</p>
-                </div>
-                <a class="button additional-product__order" href="#">Заказать</a>
-              </section>
-            </li>
-          </ul>
+          <div class="additional-products__wrapper">
+            <ul class="additional-products__list">
+              <li class="additional-products__item">
+                <section class="additional-product">
+                  <h3 class="additional-product__title">Сахарозаменитель</h3>
+                  <div class="additional-product__properties">
+                    <p class="additional-product__property">1 упаковка (100 г)</p>
+                    <p class="additional-product__property additional-product__price">200 Р.</p>
+                  </div>
+                  <a class="button additional-product__order" href="#">Заказать</a>
+                </section>
+              </li>
+              <li class="additional-products__item">
+                <section class="additional-product">
+                  <h3 class="additional-product__title">Питьевая вода</h3>
+                  <div class="additional-product__properties">
+                    <p class="additional-product__property">5 литров</p>
+                    <p class="additional-product__property additional-product__price">50 Р.</p>
+                  </div>
+                  <a class="button additional-product__order" href="#">Заказать</a>
+                </section>
+              </li>
+              <li class="additional-products__item">
+                <section class="additional-product">
+                  <h3 class="additional-product__title">Молоко</h3>
+                  <div class="additional-product__properties">
+                    <p class="additional-product__property">1 литр</p>
+                    <p class="additional-product__property additional-product__price">100 Р.</p>
+                  </div>
+                  <a class="button additional-product__order" href="#">Заказать</a>
+                </section>
+              </li>
+              <li class="additional-products__item">
+                <section class="additional-product">
+                  <h3 class="additional-product__title">Витамины</h3>
+                  <div class="additional-product__properties">
+                    <p class="additional-product__property">1 упаковка (30 г)</p>
+                    <p class="additional-product__property additional-product__price">300 Р.</p>
+                  </div>
+                  <a class="button additional-product__order" href="#">Заказать</a>
+                </section>
+              </li>
+            </ul>
 
-          <p class="additional-products__deal buy-all-deal">
-            <a class="buy-all-deal__title" href="#">Закажите все и получите чехол для кота в подарок!</a>
-          </p>
+            <p class="additional-products__deal buy-all-deal">
+              <a class="buy-all-deal__title" href="#">Закажите все и получите чехол для кота в подарок!</a>
+            </p>
+          </div>
         </section>
       </div>
     </main>

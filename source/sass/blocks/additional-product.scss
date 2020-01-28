@@ -31,6 +31,11 @@
   color: $description-color;
 }
 
+.additional-product__price {
+  width: 96px;
+  text-align: end;
+}
+
 .additional-product__order {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -48,7 +53,6 @@
     font-size: 20px;
     line-height: 20px;
     width: auto;
-    //margin-right: 40px;
   }
 
   .additional-product__properties {
@@ -69,6 +73,14 @@
   .additional-product {
     padding-top: 12px;
     padding-bottom: 7px;
+  }
+
+  .additional-product__title {
+    width: 285px;
+  }
+
+  .additional-product__properties {
+    width: 285px;
   }
 
   .additional-product__order {

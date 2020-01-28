@@ -4,11 +4,11 @@
   text-transform: uppercase;
   text-align: center;
   color: $primary-color;
-  background-color: #68b738;
+  background-color: $green-light;
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $green-lighter;
   }
 
   &:active {

@@ -4,5 +4,7 @@
 }
 
 .main-navigation--closed {
-  @include  visually-hidden;
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
+    @include  visually-hidden;
+  }
 }
