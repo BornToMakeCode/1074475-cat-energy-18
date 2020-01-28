@@ -1,7 +1,34 @@
 .page-main__title {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: $primary-color;
+  // font-size: 36px;
+  // font-weight: 400;
+  // line-height: 36px;
+  // text-transform: uppercase;
+  // color: $primary-color;
 }
+
+.page-main__how-it-works {
+  margin-top: 14px;
+}
+
+
+
+@media(min-width:$tablet-width) {
+  .page-main__how-it-works {
+    margin-top: 48px;
+  }
+}
+
+@media(min-width:$desktop-width) {
+  .page-main__catalog-previews {
+    margin-top: 80px;
+  }
+
+  .page-main__how-it-works {
+    margin-top: 43px;
+  }
+
+}
+
+
+
+

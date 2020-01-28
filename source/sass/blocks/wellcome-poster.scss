@@ -1,0 +1,17 @@
+.wellcome-poster {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  // background-image: url('../img/index-background-mobile@1x.jpg');
+  // background-repeat: no-repeat;
+  text-align: center;
+}
+
+.wellcome-poster__title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: $primary-color;
+}
+
