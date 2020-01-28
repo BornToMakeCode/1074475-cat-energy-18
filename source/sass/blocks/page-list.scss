@@ -31,7 +31,7 @@
     content: "";
     position: absolute;
     width: 320px;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid $gray-light;
     bottom: 0;
     left: -20px;
 
@@ -78,7 +78,7 @@
       content: "";
       // position: absolute;
       // width: 320px;
-      border-bottom: 2px solid #68b738;
+      border-bottom: 2px solid $green-light;
       bottom: 15px;
       left: 0px;
       width: 100%;
