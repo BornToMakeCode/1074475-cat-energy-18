@@ -1,17 +1,30 @@
 .page-header {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   //align-items: center;
   //margin: 0 auto;
 
 
   // temporary to be fixed with width variable
-  padding-top: 10px;
-  //padding-right: 20px;
-  padding-bottom: 10px;
-  // padding-left: 20px;
-  // width: 320px;
+  // padding-top: 10px;
+  // //padding-right: 20px;
+  // padding-bottom: 10px;
+  // // padding-left: 20px;
+  // // width: 320px;
+
+  // // temporary is it ok?
+  // min-height: 65px;
+  padding-top: 18px;
+  background-color: $white;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  //padding-top: 10px;
+  //padding-bottom: 10px;
 
   // temporary is it ok?
   min-height: 65px;
@@ -23,8 +36,8 @@
 
 .page-header__menu-toggle {
   position: absolute;
-  top: 23px;
-  right: 20px;
+  top: 5px;
+  right: 0;
   z-index: 1;
   display: block;
   width: 24px;
@@ -85,7 +98,21 @@
 
 @media(min-width:$tablet-width){
 
+  .page-header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .page-header__menu-toggle {
     @include visually-hidden;
   }
+}
+
+@media(min-width:$desktop-width){
+
+  .page-header {
+    padding-top: 50px;
+  }
+
 }
