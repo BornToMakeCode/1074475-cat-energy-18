@@ -17,18 +17,11 @@ body{
 }
 
 
-.page-main__wellcome-poster {
-
-  @media(min-width:$mobile-width) {
-    min-height: 460px;
-  }
   @media(min-width:$tablet-width) {
-    min-height: 836px;
+    .wellcome-poster__food {
+      height: 616px;
+      margin-top: 16px;
+    }
   }
-  @media(min-width:$desktop-width) {
-    min-height: 550px;
-  }
-}
-
 
 

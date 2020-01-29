@@ -47,7 +47,7 @@
 }
 
 .page-header__menu-toggle--closed::before {
-  content: "";
+  content: '';
 
   position: absolute;
   top: 0px;
@@ -68,7 +68,7 @@
 .page-header__menu-toggle--opened {
   &::before,
   &::after {
-    content: "";
+    content: '';
 
     position: absolute;
     top: auto;

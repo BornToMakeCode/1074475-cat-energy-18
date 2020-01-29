@@ -10,9 +10,15 @@
   margin-top: 14px;
 }
 
-
+.page-main__catalog-previews {
+  margin-top: 22px;
+}
 
 @media(min-width:$tablet-width) {
+  .page-main__wellcome-poster {
+    margin-top: 10px;
+  }
+
   .page-main__how-it-works {
     margin-top: 48px;
   }

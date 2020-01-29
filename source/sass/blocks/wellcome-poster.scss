@@ -15,3 +15,77 @@
   color: $primary-color;
 }
 
+.wellcome-poster__slogan {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+.wellcome-poster__food {
+  margin-top: 28px;
+}
+
+.wellcome-poster__select {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media(min-width:$tablet-width) {
+  .wellcome-poster {
+    padding-top: 40px;
+    padding-bottom: 508px;
+    padding-left: 88px;
+    text-align: start;
+  }
+
+  .wellcome-poster__title {
+    margin-right: 190px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $title-color;
+  }
+
+  .wellcome-poster__slogan {
+    margin-top: 41px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $title-color;
+  }
+  .wellcome-poster__select {
+    margin-top: -583px;
+    margin-right: 375px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media(min-width:$desktop-width) {
+  .wellcome-poster {
+    padding-top: 90px;
+    padding-bottom: 304px;
+    padding-left: 80px;
+  }
+
+  .wellcome-poster__title {
+    margin-right: 660px;
+  }
+  .wellcome-poster__select {
+    margin-right: 896px;
+  }
+
+  // .page-main__catalog-previews {
+  //   margin-top: 80px;
+  // }
+
+  // .page-main__how-it-works {
+  //   margin-top: 43px;
+  // }
+
+}
+
